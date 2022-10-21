@@ -18,27 +18,31 @@
 <body>
     <!--header-->
         <header class="page-header">
-            <nav>
-                <a class="logo link" href="./index.html"> Web<span class="logo-text">Studio</span>
-                </a>
-                <ul class="header-nav list">
-                    <li><a href="./index.html" class="link navi">Студія</a></li>
-                    <li><a href="./portfolio.html" class="link current navi">Портфоліо</a></li>
-                    <li><a href="#" class="link navi">Контакти</a></li>
+            <div class="container header-nav">
+                <nav class="nav header-nav">
+                    <a class="logo link" href="./index.html"> Web<span class="logo-text">Studio</span>
+                    </a>
+                    <ul class="header-nav list">
+                        <li class="item"><a href="./index.html" class="link  navi">Студія</a></li>
+                        <li class="item"><a href="./portfolio.html" class="link current navi">Портфоліо</a></li>
+                        <li class="item"><a href="#" class="link navi">Контакти</a></li>
+                    </ul>
+                </nav>
+                <!--in future you can put mail+tel into div-->
+                <ul class="header-nav list contact">
+                    <li class="item contact"><a href="mailto:info@devstudio.com" class="link contact">info@devstudio.com</a>
+                    </li>
+                    <li class="item contact"><a href="tel:+380961111111" class="link contact">+38 096 111 11 11</a></li>
                 </ul>
-            </nav>
-            <!--in future you can put mail+tel into div-->
-            <ul class="header-nav list">
-                <li><a href="mailto:info@devstudio.com" class="link contact">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="link contact">+38 096 111 11 11</a></li>
-            </ul>
+            </div>
         </header>
 
 
     <!--main part-->
     <main class="main-portfolio">
         <!-- buttons -->
-        <section class="portfolio">
+        <section class="portfolio section">
+        <div class="container">
             <h1 class="visually-hidden">Портфоліо</h1>
             <ul>
                 <li><button class="btn-filter btn" type="button">Усі</button></li>
@@ -47,8 +51,10 @@
                 <li><button class="btn-filter btn" type="button">Дизайн</button></li>
                 <li><button class="btn-filter btn" type="button">Маркетинг</button></li>
             </ul>
+        </div>
 
         <!-- cards -->
+        <div class="container">
             <ul class="portfolio-items">
                 <li class="portfolio-cards">
                     <a href="#" class="link">
@@ -114,11 +120,13 @@
                     </a>
                 </li>
             </ul>
+        </div>
         </section>
     </main>
 
     <!--end of page-->
     <footer class="footer">
+        <div class="container">
         <a class="logo link" href="./index.html"> Web<span class="logo-footer">Studio</span>
         </a>
     
@@ -136,6 +144,7 @@
                 </li>
             </ul>
         </address>
+        </div>
     </footer>
 </body>
 

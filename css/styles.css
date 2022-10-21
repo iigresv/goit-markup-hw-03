@@ -6,6 +6,7 @@
 .logo
 .logo-text
 .logo-footer
+.header-nav .item
 .header-nav .link
 .header-nav .link:hover,
 .header-nav .link:focus
@@ -66,13 +67,17 @@ body {
 
 /* reset */
 
-h1, h2, h3, h4, h4, h5, h6, p {
+h1, h2, h3, h4, h4, h5, h6, p, ul {
 margin: 0;
+padding: 0;
 }
 
 /* index */
 /* header*/
 .page-header {
+border-bottom: 1px solid #ececec;;
+
+
 background-color: var(--main-bgc);
 font-weight: 500;
 font-size: 14px;
@@ -82,6 +87,10 @@ color: #212121;
 }
 
 .page-header .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     text-decoration: none;
 }
 .list {
@@ -89,6 +98,8 @@ color: #212121;
 }
 
 .logo {
+margin-right: 93px;
+
 color: var(--accent-color);
 font-family: Raleway,
 sans-serif;
@@ -105,11 +116,33 @@ color: var(--title-text-color);
 color: var(--main-bgc);
 }
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
 .header-nav .navi {
     color: var(--title-text-color);
 }
 
+.header-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .header-nav .contact {
+    /* not sure */
+    margin-left: auto;
     color: var(--primary-text-color);
 }
 
@@ -123,12 +156,22 @@ color: var(--accent-color);
 
 /* main */
 
+
 /* hero */
 .hero {
+padding: 200px;
+
 background-color: var(--hero-bgc);
 }
 
 .hero-title {
+margin-bottom: 30px;
+margin-left: auto;
+margin-right: auto;
+/* not sure */
+display: flex;
+width: 696px;
+
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -139,6 +182,10 @@ color: var(--main-bgc);
 }
 
 .hero-btn {
+margin: 10px 32px;
+border: 0;
+
+
 font-family: "Roboto", sans-serif;
 font-weight: 700;
 font-size: 16px;
@@ -161,6 +208,9 @@ cursor: pointer;
     background-color: #188CE8;
 }
 
+.section {
+    padding-bottom: 94px;
+}
 /* advantages */
 .visually-hidden {
     position: absolute;
@@ -173,6 +223,15 @@ cursor: pointer;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.advantages-list{
+    display: flex;
+
+}
+.advantages-list .item {
+    width: 270px;
+    padding-top: 10px;
 }
 
 .advantages .title {
