@@ -17,26 +17,26 @@
 
 <body>
     <!--header-->
-        <header class="page-header">
-            <div class="container header-nav">
-                <nav class="nav header-nav">
-                    <a class="logo link" href="./index.html"> Web<span class="logo-text">Studio</span>
-                    </a>
-                    <ul class="header-nav list">
-                        <li class="item"><a href="./index.html" class="link  navi">Студія</a></li>
-                        <li class="item"><a href="./portfolio.html" class="link current navi">Портфоліо</a></li>
-                        <li class="item"><a href="#" class="link navi">Контакти</a></li>
-                    </ul>
-                </nav>
-                <!--in future you can put mail+tel into div-->
-                <ul class="header-nav list contact">
-                    <li class="item contact"><a href="mailto:info@devstudio.com" class="link contact">info@devstudio.com</a>
-                    </li>
-                    <li class="item contact"><a href="tel:+380961111111" class="link contact">+38 096 111 11 11</a></li>
+    <header class="page-header">
+        <div class="container header-nav">
+            <nav class="nav header-nav">
+                <a class="logo link" href="./index.html"> Web<span class="logo-text">Studio</span>
+                </a>
+                <ul class="header-nav list">
+                    <li class="item"><a href="./index.html" class="link  navi">Студія</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link navi current">Портфоліо</a></li>
+                    <li class="item"><a href="#" class="link navi">Контакти</a></li>
                 </ul>
-            </div>
-        </header>
-
+            </nav>
+            <!--in future you can put mail+tel into div-->
+            <ul class="header-nav list contact">
+                <li class="item contact"><a href="mailto:info@devstudio.com" class="link contact">info@devstudio.com</a>
+                </li>
+                <li class="item contact"><a href="tel:+380961111111" class="link contact">+38 096 111 11 11</a></li>
+            </ul>
+        </div>
+    </header>
+<div class="item-cards-text"></div>
 
     <!--main part-->
     <main class="main-portfolio">
@@ -44,7 +44,7 @@
         <section class="portfolio section">
         <div class="container">
             <h1 class="visually-hidden">Портфоліо</h1>
-            <ul>
+            <ul class="buttons-list">
                 <li><button class="btn-filter btn" type="button">Усі</button></li>
                 <li><button class="btn-filter btn" type="button">Веб-сайти</button></li>
                 <li><button class="btn-filter btn" type="button">Додатки</button></li>
@@ -59,64 +59,82 @@
                 <li class="portfolio-cards">
                     <a href="#" class="link">
                     <img src="./images/technokryak.jpg" alt="Ноутбук" width="370">
-                    <h2 class="title">Технокряк</h2>
-                    <p class="text">Веб-сайт</p>
+                    <div class="item-cards-text">
+                        <h2 class="title">Технокряк</h2>
+                        <p class="text">Веб-сайт</p>
+                    </div>
                     </a>
                 </li>
                 <li class="portfolio-cards">
                     <a href="#" class="link">
                     <img src="./images/poster.jpg" alt="Постер" width="370">
-                    <h2 class="title">Постер New Orlean vs Golden Star</h2>
-                    <p class="text">Дизайн</p>
+                    <div class="item-cards-text">
+                        <h2 class="title">Постер New Orlean vs Golden Star</h2>
+                        <p class="text">Дизайн</p>
+                    </div>
                     </a>
                 </li>
                 <li class="portfolio-cards">
                     <a href="#" class="link">
                     <img src="./images/seafood.jpg" alt="Логотип ресторану" width="370">
-                    <h2 class="title">Ресторан Seafood</h2>
-                    <p class="text">Додаток</p>
+                    <div class="item-cards-text">
+                        <h2 class="title">Ресторан Seafood</h2>
+                        <p class="text">Додаток</p>
+                    </div>
                     </a>
                 </li>
                 <li class="portfolio-cards">
                     <a href="#" class="link">
                     <img src="./images/project-prime.jpg" alt="Навушники" width="370">
-                    <h2 class="title">Проєкт Prime</h2>
-                    <p class="text">Маркетинг</p>
+                    <div class="item-cards-text">
+                        <h2 class="title">Проєкт Prime</h2>
+                        <p class="text">Маркетинг</p>
+                    </div>
                     </a>
                 </li>
                 <li class="portfolio-cards">
                     <a href="#" class="link">
                     <img src="./images/project-boxes.jpg" alt="Коробки" width="370">
-                    <h2 class="title">Проєкт Boxes</h2>
-                    <p class="text">Додаток</p>
+                    <div class="item-cards-text">
+                        <h2 class="title">Проєкт Boxes</h2>
+                        <p class="text">Додаток</p>
+                    </div>
                     </a>
                 </li>
                 <li class="portfolio-cards">
                     <a href="#" class="link">
                     <img src="./images/inspiration.jpg" alt="Компʼютер" width="370">
-                    <h2 class="title">Inspiration has no Borders</h2>
-                    <p class="text">Веб-сайт</p>
+                    <div class="item-cards-text">
+                        <h2 class="title">Inspiration has no Borders</h2>
+                        <p class="text">Веб-сайт</p>
+                    </div>
                     </a>
                 </li>
                 <li class="portfolio-cards">
                     <a href="#" class="link">
                     <img src="./images/limited.jpg" alt="Книга" width="370">
-                    <h2 class="title">Видання Limited Edition</h2>
-                    <p class="text">Дизайн</p>
+                    <div class="item-cards-text">
+                        <h2 class="title">Видання Limited Edition</h2>
+                        <p class="text">Дизайн</p>
+                    </div>
                     </a>
                 </li>
                 <li class="portfolio-cards">
                     <a href="#" class="link">
                     <img src="./images/project-lab.jpg" alt="Бірка" width="370">
-                    <h2 class="title">Проєкт LAB</h2>
-                    <p class="text">Маркетинг</p>
+                    <div class="item-cards-text">
+                        <h2 class="title">Проєкт LAB</h2>
+                        <p class="text">Маркетинг</p>
+                    </div>
                     </a>
                 </li>
                 <li class="portfolio-cards">
                     <a href="#" class="link">
                     <img src="./images/growing-business.jpg" alt="Робочий процес" width="370">
-                    <h2 class="title">Growing Business</h2>
-                    <p class="text">Додаток</p>
+                    <div class="item-cards-text">
+                        <h2 class="title">Growing Business</h2>
+                        <p class="text">Додаток</p>
+                    </div>
                     </a>
                 </li>
             </ul>
@@ -127,23 +145,23 @@
     <!--end of page-->
     <footer class="footer">
         <div class="container">
-        <a class="logo link" href="./index.html"> Web<span class="logo-footer">Studio</span>
-        </a>
+            <a class="logo link logo-footer-bottom" href="./index.html"> Web<span class="logo-footer">Studio</span>
+            </a>
     
-        <address class="address-list">
-            <ul class="address-list list">
-                <li>
-                    <a href="https://goo.gl/maps/eHe3GoqxuUHjzjyF7" target="blank" rel="noopener nofollow noreferrer"
-                        class="address link">м. Київ, пр-т Лесі Українки, 26</a>
-                </li>
-                <li>
-                    <a href="mailto:info@devstudio.com" class="link-footer link">info@devstudio.com</a>
-                </li>
-                <li>
-                    <a href="tel:+380961111111" class="link-footer link">+38 096 111 11 11</a>
-                </li>
-            </ul>
-        </address>
+            <address class="address-list">
+                <ul class="address-list list">
+                    <li class="address-item-list">
+                        <a href="https://goo.gl/maps/eHe3GoqxuUHjzjyF7" target="blank" rel="noopener nofollow noreferrer"
+                            class="address link">м. Київ, пр-т Лесі Українки, 26</a>
+                    </li>
+                    <li class="address-item-list">
+                        <a href="mailto:info@devstudio.com" class="link-footer link">info@devstudio.com</a>
+                    </li>
+                    <li class="address-item-list">
+                        <a href="tel:+380961111111" class="link-footer link">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
         </div>
     </footer>
 </body>
