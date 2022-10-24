@@ -128,7 +128,7 @@ color: var(--main-bgc);
     margin-right: auto;
 }
 
-.img {
+img {
     display: block;
     width: 100%;
     height: auto;
@@ -263,7 +263,7 @@ cursor: pointer;
 } */
 
 .advantages .title {
-padding-bottom: 10px;
+margin-bottom: 10px;
 
 font-weight: 700;
 font-size: 14px;
@@ -274,7 +274,7 @@ color: var(--title-text-color);
 
 /* about */
 .about .pretitle {
-padding-bottom: 50px;
+margin-bottom: 50px;
 
 color: var(--title-text-color);
 font-weight: 700;
@@ -327,6 +327,8 @@ color: var(--title-text-color);
 }
 
 .people-item {
+width: 270px;
+
 background-color: var(--main-bgc);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
@@ -338,7 +340,8 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .people-item-scope {
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* end of page */
@@ -423,11 +426,10 @@ gap: 30px;
 }
 
 .portfolio-cards {
-flex-basis: calc((100%-30px*2)/3);
+flex-basis: calc((100% - 30px * 2) / 3);
 width: 370px;
 
-    border: 1px solid #EEEEEE;
-    border-top: none;
+
 }
 
 .container .buttons-list {
@@ -442,8 +444,14 @@ width: 370px;
 text-decoration: none;
 }
 
+.portfolio-items .title {
+    margin-bottom: 4px;
+}
+
 .item-cards-text {
-    padding: 20px;
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
 }
 
 .portfolio-items .title {
